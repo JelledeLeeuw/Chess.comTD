@@ -17,14 +17,19 @@ public class CheckerMovement : MonoBehaviour
 
     private void Start()
     {
+        GetData();
         _yAxis = transform.position.y;
+    }
+
+    private void FixedUpdate()
+    {
+        Movement();
     }
 
     private void Update()
     {
         GetData();
         CheckTileToMoveTo();
-        Movement();
     }
 
     private void GetData()
@@ -32,7 +37,6 @@ public class CheckerMovement : MonoBehaviour
         _tileToMoveTo = _selectedPath.TilesOnPath(_index);
         if (_tileToMoveTo.CompareTag("EndTile")) 
         {
-            Debug.Log("eind bereikt");
             Destroy(gameObject);
         }
     }
