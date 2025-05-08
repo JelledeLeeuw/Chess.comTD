@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class Rook : MonoBehaviour
 {
-    private GameObject _tileToAttack;
+    [SerializeField] private GameObject _tileToAttack;
     private Vector3 _startPos;
     private bool _attack;
+    [SerializeField] Vector3 _offSet;
     [SerializeField] private Collider[] _colliders;
 
     private void Start()
@@ -35,7 +36,7 @@ public class Rook : MonoBehaviour
     {
         if (_attack == true)
         {
-            transform.position = Vector3.Lerp(transform.position, _tileToAttack.transform.position, 0.1f);
+            transform.position = Vector3.Lerp(transform.position, _tileToAttack.transform.position - _offSet, 0.1f);
             transform.position = new Vector3(transform.position.x, _startPos.y, transform.position.z);
         }
         else
