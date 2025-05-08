@@ -883,7 +883,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1065,32 +1065,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1612434025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2494736653966057523, guid: d14622b068305944b9c8ccea4e008988, type: 3}
-  m_PrefabInstance: {fileID: 5958357891376830970}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1612434034
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612434025}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.8651485, z: 1}
-  m_Center: {x: 0, y: 0.33013365, z: 0}
 --- !u!1 &1650452991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,10 +1471,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pawn
       objectReference: {fileID: 0}
-    - target: {fileID: 3634677580056946232, guid: d14622b068305944b9c8ccea4e008988, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3682851041634186386, guid: d14622b068305944b9c8ccea4e008988, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1541,17 +1511,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6567198554212993445, guid: d14622b068305944b9c8ccea4e008988, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2494736653966057523, guid: d14622b068305944b9c8ccea4e008988, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1612434034}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14622b068305944b9c8ccea4e008988, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

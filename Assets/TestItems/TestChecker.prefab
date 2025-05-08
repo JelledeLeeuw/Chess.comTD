@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8975835594308448028}
-  - component: {fileID: 4613406601048042325}
   - component: {fileID: 5096672405569443444}
+  - component: {fileID: 8786239883493406405}
   m_Layer: 0
   m_Name: TestChecker
   m_TagString: Untagged
@@ -34,29 +34,6 @@ Transform:
   - {fileID: 6303396034569213326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &4613406601048042325
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3250358504022128645}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &5096672405569443444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +49,27 @@ MonoBehaviour:
   speed: 0.1
   offsetX: -0.5
   offsetZ: 0.5
+--- !u!65 &8786239883493406405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3250358504022128645}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 2.1340451, z: 0.6}
+  m_Center: {x: 0, y: 0.5670226, z: 0}
 --- !u!1001 &6778092831911294096
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EndTile
   - Tile
+  - PlaceableTile
   layers:
   - Default
   - TransparentFX
