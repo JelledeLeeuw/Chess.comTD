@@ -36,10 +36,12 @@ public class Rook : MonoBehaviour
         if (_attack == true)
         {
             transform.position = Vector3.Lerp(transform.position, _tileToAttack.transform.position, 0.1f);
+            transform.position = new Vector3(transform.position.x, _startPos.y, transform.position.z);
         }
         else
         {
             transform.position = Vector3.Lerp(transform.position, _startPos, 0.1f);
+            transform.position = new Vector3(transform.position.x, _startPos.y, transform.position.z);
         }
     }
 

@@ -5,6 +5,8 @@ public class CheckerMovement : MonoBehaviour
 {
     [Header("Movement settings")]
     [SerializeField] private float speed;
+    [SerializeField] private float offsetX;
+    [SerializeField] private float offsetZ;
     private SelectedPath _selectedPath;
     private GameObject _tileToMoveTo;
     private int _index;
@@ -43,10 +45,10 @@ public class CheckerMovement : MonoBehaviour
 
     private void CheckTileToMoveTo()
     {
-        if (transform.position.x > _tileToMoveTo.transform.position.x -0.01f
-        && transform.position.x < _tileToMoveTo.transform.position.x + 0.01f
-        && transform.position.z > _tileToMoveTo.transform.position.z - 0.01f
-        && transform.position.z < _tileToMoveTo.transform.position.z + 0.01f) 
+        if (transform.position.x > _tileToMoveTo.transform.position.x - 0.01f + offsetX
+        && transform.position.x < _tileToMoveTo.transform.position.x + 0.01f + offsetX
+        && transform.position.z > _tileToMoveTo.transform.position.z - 0.01f + offsetZ
+        && transform.position.z < _tileToMoveTo.transform.position.z + 0.01f + offsetZ)
         {
             _index++;
         }
@@ -54,7 +56,8 @@ public class CheckerMovement : MonoBehaviour
 
     private void Movement()
     {
-        transform.position = Vector3.Lerp(transform.position, _tileToMoveTo.transform.position, speed);
+        Vector3 _offset = new Vector3(offsetX, 0, offsetZ);
+        transform.position = Vector3.Lerp(transform.position, _tileToMoveTo.transform.position + _offset, speed);
         transform.position = new Vector3(transform.position.x, _yAxis, transform.position.z);
     }
 }
