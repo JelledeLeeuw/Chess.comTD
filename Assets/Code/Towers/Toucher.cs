@@ -79,7 +79,7 @@ public class Toucher : MonoBehaviour
                 if (hit.transform.gameObject.CompareTag("PlaceableTile"))
                 {
                     _indicatorInstance.SetActive(true);
-                    _indicatorInstance.transform.position = hit.transform.position;
+                    _indicatorInstance.transform.position = hit.transform.position + new Vector3(-0.5f, 0f, 0.5f);
 
                     if (_mouseClick != 0)
                     {

@@ -7,6 +7,7 @@ TagManager:
   - EndTile
   - Tile
   - PlaceableTile
+  - Attacker
   layers:
   - Default
   - TransparentFX

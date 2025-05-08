@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1970626025207646816}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.33, y: -1, z: -1.33}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 266.66663, y: 266.66663, z: 159.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 2775183919523955305}
   m_Layer: 0
   m_Name: Pawn
-  m_TagString: Untagged
+  m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,9 +224,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.8651485, z: 1}
-  m_Center: {x: 0, y: 0.33013365, z: 0}
+  m_Size: {x: 1, y: 2.0393698, z: 1}
+  m_Center: {x: 0, y: 0.24302304, z: 0}
