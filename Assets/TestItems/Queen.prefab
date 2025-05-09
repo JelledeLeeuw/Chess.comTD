@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7accd8fad9097cc43869040c7c8c6100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 200
+  rotationSpeed: 70
   bullet: {fileID: 4855357954802021361, guid: 33b631f6fb379124c9219ecbfbc41289, type: 3}
-  shootTime: 0.4
-  amountOfBullets: 20
+  shootTime: 0.1
+  amountOfBullets: 5
 --- !u!1001 &270228579018369078
 PrefabInstance:
   m_ObjectHideFlags: 0
