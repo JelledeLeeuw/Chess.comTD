@@ -70,6 +70,9 @@ MonoBehaviour:
   - {fileID: 5878260517933935521, guid: b268d239d6727b54686cfa851bb1c925, type: 3}
   - {fileID: -7082797129817752807, guid: edd64bd048f9db9429f84bce1afc372d, type: 3}
   - {fileID: 6908422819111982393, guid: c6b731b3bb3a3934598e6daedd9ea583, type: 3}
+  _renderer: {fileID: 6139604114205785287}
+  _standardMat: {fileID: 2100000, guid: 3693a7fb13d962743a8a46f683b8b653, type: 2}
+  _greenMat: {fileID: 2100000, guid: cb7d3593355b14d479ef50d3e6875b49, type: 2}
 --- !u!65 &7946647728410900265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -194,6 +197,11 @@ PrefabInstance:
 --- !u!4 &5007841935300020136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678555694645584158, guid: 938ba888246ab294988f5c89df67a02f, type: 3}
+  m_PrefabInstance: {fileID: 5482529439490762422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6139604114205785287 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1810897933985700465, guid: 938ba888246ab294988f5c89df67a02f, type: 3}
   m_PrefabInstance: {fileID: 5482529439490762422}
   m_PrefabAsset: {fileID: 0}
 --- !u!33 &8273312765558638605 stripped

@@ -8,6 +8,7 @@ TagManager:
   - Tile
   - PlaceableTile
   - Attacker
+  - Sphere
   layers:
   - Default
   - TransparentFX

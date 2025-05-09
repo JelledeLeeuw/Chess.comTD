@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class CheckerMovement : MonoBehaviour
@@ -59,5 +60,21 @@ public class CheckerMovement : MonoBehaviour
         Vector3 _offset = new Vector3(offsetX, 0, offsetZ);
         transform.position = Vector3.Lerp(transform.position, _tileToMoveTo.transform.position + _offset, speed);
         transform.position = new Vector3(transform.position.x, _yAxis, transform.position.z);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("Sphere"))
+        {
+            StartCoroutine(SlowDown());
+        }
+    }
+
+    private IEnumerator SlowDown()
+    {
+        speed = speed / 2;
+        yield return new WaitForSeconds(1);
+        speed = speed * 2;
     }
 }
